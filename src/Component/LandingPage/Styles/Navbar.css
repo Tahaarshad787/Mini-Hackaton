@@ -1,0 +1,113 @@
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 50px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 45px;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a202c;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #4b5563;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #15803d;
+    transform: scale(1.1);
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 100px;
+  }
+  
+  .navbar-buttons button {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1rem;
+  }
+  
+  .signup-btn {
+    background-color: #16a34a;
+  }
+  
+  .signup-btn:hover {
+    background-color: #15803d;
+    transform: translateY(-2px);
+  }
+  
+  .login-btn {
+    background-color: #4b5563;
+  }
+  
+  .login-btn:hover {
+    background-color: #374151;
+    transform: translateY(-2px);
+  }
+  
+  .user-icon {
+    font-size: 1.8rem;
+    color: #4b5563;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .user-icon:hover {
+    color: #15803d;
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .navbar-buttons {
+      margin-top: 1rem;
+    }
+  }
+  
